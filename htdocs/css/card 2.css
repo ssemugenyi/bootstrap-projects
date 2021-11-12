@@ -1,0 +1,53 @@
+.container-control{
+    width: 30%;
+    border: 1px solid red;
+    height: 320px;
+    position: relative;
+}
+.container1{
+    background: url(images/logo2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: orange; */
+    padding-top: 15px;
+    height: 280px;
+    position: relative;
+
+}
+.content-container1{
+    margin-top: -26px;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    transform: scale (0.7);
+    transition: all 0.5S ease-in-out;
+}
+.container1:hover .content-container1 {
+   background-color: orange;
+   opacity: 1;
+   height: 280px;
+   transform: scale(1);
+   transition: transform 0.9s, opacity 0.7;
+   
+}
+.paragraph-container1{
+    font-size: 12px;
+}
+.button-container1{
+    border-radius: 10%;
+}
+.container2{
+    background-color: orangered;
+    position: absolute;
+    padding-top: 30px;
+    height: 61px;
+}
+.content-container2{
+    margin-top: -30px;
+    margin-right: 36px;
+    height: 61px;
+    padding-top: 30px;
+    background-color: orange;
+    box-shadow: 0 15px 15px 0 rgba(0 0 0 / 60%);
+}

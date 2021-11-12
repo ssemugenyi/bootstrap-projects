@@ -1,0 +1,21 @@
+@media screen and (max-width:480px){
+
+    
+    .btn_col .button{
+        padding-left: 0px;
+        margin-left: 0px;
+       
+        
+    }
+    .header_btn{
+        
+        margin:8px;
+    }
+    .cardhead h2 {
+        font-size: 4rem;
+        
+    }
+    .cardhead .divider{
+        width: 40%;
+    }
+    }

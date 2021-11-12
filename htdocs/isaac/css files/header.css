@@ -1,0 +1,95 @@
+
+
+header{
+    background-color: var(--prim);
+    
+
+}
+.column{
+    text-align: left;
+}
+.med_logo{
+    text-align: right;
+}
+ header img{
+     height: 90px;
+     
+ }
+header a{
+    text-decoration: none;
+}
+
+
+header a h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color:white;
+}
+.row_align_items_start{
+    padding-right: 50px;
+}
+
+header a h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color:white;
+   
+}
+.nav_bar .nav_bar_nav .nav_item2{
+    width: 225px;
+}
+.nav_bar .nav_bar_nav .nav_item4{
+    width: 171px;
+}
+.nav_bar .nav_bar_nav .nav_item5{
+    width: 130px;
+}
+.nav_bar_nav{
+    width: 130%;
+}
+
+.nav-item a{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 27px;
+    color: #fff !important;
+    
+    
+}
+.nav-link{
+    color: white;
+}
+.dropdown_menu{
+    padding: 0px !important;
+   
+}
+.dropdown_menu li{
+    background-color: var(--prim);
+    z-index: 99;
+}
+.btn_col .button{
+    padding-left: 210px;
+    margin-left: 85px;
+}
+.button{
+    margin-top: 15px;
+    border: none;
+    border-radius: 20%;
+    /* color: white; */
+    cursor: pointer;
+    
+    
+    
+    
+}
+.button .login-btn {
+    background-color: var(--sec);
+    box-shadow: 0 15px 15px rgb(0 0 0 / 60%);
+    
+    }
+ .button .signup-btn {
+    background-color: var(--tert);
+    box-shadow: 0 15px 15px rgb(0 0 0 / 60%);
+}
+

@@ -1,0 +1,469 @@
+
+   .class{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(images/watermark.jpg);
+    font-size: cover;
+    background-position: center;
+   }
+   .designer{
+       background: green;
+       width: 100%;
+       display: flex;
+       flex-flow: row;
+   }
+   .designer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.design{
+    left: 50px;
+    top: 0;
+    width: 100px;
+    float: left;
+} 
+   .col{
+       width: 33.3%;
+
+   }
+   header h2{
+    color: salmon;
+    padding: 22px;
+    padding-top: 45px;
+    text-align: center;
+    font-weight: 800;
+}
+   .column-2{
+    width: 52%;
+    display: inline-block;
+    position: relative;
+    margin-top: 14px;
+
+   }
+   nav ul li a{
+    color: honeydew;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px;
+    font-weight: 900;
+    font-size: 12px;
+   }
+   nav ul li{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    line-height: 1.7;
+    width: 135px;
+    height: 50px;
+   }
+   nav ul li:hover{
+        background-color: hotpink;
+        cursor: pointer;
+   }
+   nav ul li ul{
+       position: absolute;
+       top: 40px;
+       left: 0px;
+         display: none; 
+       transition: 0.4s ease-in-out;
+   }
+   nav ul li:hover ul{
+       display: block;
+       background-color: hotpink;
+   }
+   nav ul li a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 20%; 
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+   }
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* overflow: hidden; */
+    transition: max-height 0.4s;
+}
+
+nav a:hover{
+    color: honeydew;
+} 
+.menu{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: hotpink;
+    padding: 24px;
+    display: none;
+    color: #fff;
+    font-size: 22px;
+}
+#checkbox{
+    display: none;
+
+}nav li {
+  display: inline-block;
+
+}
+   .column-3{
+        width: 20%;
+        border-radius: 10%;
+        padding: 20px;
+        margin-top: 25px;
+        display: inline-block; 
+        position: relative; 
+        text-decoration: none;
+   }
+   .btn{
+       border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px;
+   }
+   .signin{
+       background-color: hotpink;
+   }
+   .signin a{
+       text-decoration: none;
+   }
+   .login{
+       background-color: hotpink;
+   }
+    .login a{
+        text-decoration: none;
+    }
+   
+#container{
+    border: 20px solid green;
+    background-color: hotpink;
+    border-radius: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#container .sec2{
+    width: 50%;
+}
+#container #sec1{
+    width: 50%;
+}
+
+
+#container #sec1 #about{
+    color:palegreen;
+    background-color: red;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 35px;
+}
+#container .sec2 .location{
+    color: aquamarine;
+    background-color: brown;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 35px;
+
+}
+#container .sec3 .motto{
+    color: coral;
+    background-color: cyan;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 35px;
+}
+#container .sec3{
+    width: 50%;
+}
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* @media screen and (min-width: 480px){
+    #container{
+        border: 10px;
+        border-radius: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row;
+    }
+    #container .sec2{
+        width: 100%;
+    }
+    #container #sec1{
+        width: 100%;
+    }
+    #container .sec3{
+        width: 100%;
+    }
+    #container #sec1 #about{
+        padding: 16px;
+        margin: 10px 20px;
+    }
+    #container .sec2 .location{
+        padding: 16px;
+        margin: 10px 20px;
+    }
+    #container .sec3 .motto{
+        padding: 16px;
+        margin: 10px 20px;
+    }
+} */
+@media screen and (max-width: 480px){
+    .designer{
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+    .column-2{
+        display: inline-block;
+    }
+    nav ul li{
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    text-align: center;
+    left: 154px;
+    position: relative;
+    padding: 0px;
+    line-height: 4.7;
+    width: 150px;
+    height: 50px;
+    }
+    nav ul li:hover{
+         background-color: #000;
+    }
+    nav ul li ul{
+        position: absolute;
+        top: 40px;
+        left: 150px;
+        
+    }
+    nav ul li:hover ul{
+        display: block;
+    }
+    nav ul li a::before{
+     content: "";
+     display: block;
+     height: 5px;
+     width: 20%; 
+     background-color: #444;
+     position: absolute;
+     top: 0;
+     width: 0;
+     transition: all ease-in-out 250ms;
+    }
+    nav ul{
+        
+        overflow: show;
+        transition: max-height 0.4s;
+    }
+    .column-3{
+         display: flex; 
+         flex-direction: row;
+    }
+    .btn{
+         position: center;
+    }
+    .signin{
+        background-color: hotpink;
+        padding: 35px;
+        margin-left: 98px;
+    }
+    .signin a{
+        text-decoration: none;
+    }
+    .login{
+        background-color: hotpink;
+        padding: 40px;
+    }
+     .login a{
+         text-decoration: none;
+     }
+     nav ul{
+         max-height: 0;
+
+     }
+     #checkbox:checked + nav ul{
+         max-height: 20rem;
+     }
+     .menu{
+         display: block;
+         text-align: center;
+     }
+    #container{
+        border: 10px;
+        border-radius: 20px;
+    }
+    #container .sec2{
+        width: 100%;
+    }
+    #container #sec1{
+        width: 100%;
+    }
+    #container .sec3{
+        width: 100%;
+    }
+    #container #sec1 #about{
+    padding: 5px;
+    margin: 11px 2px;
+    font-size: 12px;
+    }
+    #container .sec2 .location{
+        padding: 5px;
+        margin: 11px 2px;
+        font-size: 12px;
+    }
+    #container .sec3 .motto{
+        padding: 5px;
+        margin: 11px 2px; 
+        font-size: 12px 
+}
+}
+* {
+ margin: 0;
+ padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: gray;
+}
+.contact {
+ height: 95vh;
+ background-image: url(images/watermark.jpg);
+ background-size: cover;
+ background-position: top;
+
+}
+.contact .title{
+    color: orange;
+    background-color: orchid;
+    
+}
+.contact .title a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+    background: url(images/wallpaper.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+ .loginbox .pic{
+    width: 100px;
+    height: 100px;
+    text-align: left;
+    position: center;
+    size: cover;
+}
+.logo .loginbox{
+    width: 300px;
+    height: 500px;
+    background: green;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.logo .login{
+    width: 50px;
+    height: 100px;
+    border-radius: 10%;
+    position: absolute;
+}
+ .logo .loginbox h1{
+   margin: 2px;
+   padding: 2px;
+   text-align: center;
+   font-size: 22px;
+   color: tomato;
+   border-bottom: 2px solid;
+   margin-bottom: 30px;
+
+}
+.logo .loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.logo .loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:gray;
+}
+.logo .loginbox input[type="text"], input[type="password"]{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid red;
+    color: yellow;
+    font-size: 12px;
+    height: 10px;
+}
+.logo .loginbox input[type="submit"]{
+ border: none;
+ outline: none; 
+ height: 40px;
+ background: violet;
+ font-size: 12px;
+color: yellow;
+border-radius: 10%;
+}
+.logo .loginbox input[type="submit"]:hover
+{
+ cursor: pointer;
+ background:rebeccapurple;
+ color: rosybrown;
+}
+.logo .loginbox a{
+  text-decoration: none; 
+   font-size: 12px;
+   color:gray;
+   line-height: 10px;
+}
+.loginbox a:hover{
+  color:gray;  
+}
+.back{
+    border: green;
+    border-radius: 10%;
+    padding: 2px;
+    margin: 5px;
+}
+@keyframes change-color {
+    from {background-color: indianred;}
+    to {background-color: lawngreen;}
+}
+.animation-box{
+    animation-name: change-color;
+    animation-duration: 4s;
+    width: 300px;
+    height: 400px;
+    animation-delay: 2s;
+    background-attachment: fixed;
+    animation-iteration-count: 4;
+}

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: gray;
+    padding: 30px;
+}
+.contact{
+    height: 95vh;
+    background-image:linear-gradient(
+        to right bottom,
+     rgba(120, 213, 111, 0.8),
+     rgba(40, 180, 131, 0.8)), 
+         url(images/watermark.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    
+}
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+}
+.logo{
+    height: 35px;
+}
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading{
+    color: honeydew;
+    text-transform: uppercase; 
+}
+.heading1{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: change-color;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+}
+.heading2{
+display: block;
+font-size: 20px;
+font-weight: 400;
+letter-spacing: 17.4px;
+}
+@keyframes change-color {
+    0%{
+        opacity: 0;
+        transform: translate(-100px) rotate(80deg);
+
+    }
+    80%{
+        transform: translate(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

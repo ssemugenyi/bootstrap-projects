@@ -1,0 +1,232 @@
+/*****************************************************************************
+ WORDPRESS
+*****************************************************************************/
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+/** 
+ * SCREEN READERS 
+ */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+	.screen-reader-text:focus {
+		background-color: rgba(0, 0, 0, 0.15);
+		clip: auto !important;
+		clip-path: none;
+		color: rgba(0, 0, 0, 0.95);
+		display: block;
+		font-size: 1rem;
+		height: auto;
+		left: 0.25rem;
+		line-height: normal;
+		padding: 1rem;
+		text-decoration: none;
+		top: 0.25rem;
+		width: auto;
+		z-index: 100000;
+	}
+
+/** 
+ * STICKY 
+ */
+.sticky {
+	padding: 1.5rem;
+	margin-bottom: 6rem;
+	background-color: rgba(0, 0, 0, 0.05);
+	position: relative;
+}
+
+	.sticky:before {
+		font-weight: 700;
+		letter-spacing: 0.05rem;
+		padding: 0.5rem;
+		font-size: 1rem;
+		background-color: rgba(255, 255, 255, 0.5);
+		content: 'PINNED';
+		position: absolute;
+		top: 3px;
+		right: 3px;
+	}
+	.sticky .content-aside {
+		border-color: rgba(0, 0, 0, 0.06);
+		background-color: rgba(255, 255, 255, 0.5);
+		margin-bottom: 0;
+	}
+
+/** 
+ * FLOATING 
+ */
+.alignnone {
+	margin: 0.25rem 1rem 1rem 0;
+}
+	.alignleft {
+		float: left;
+		margin: 0.25rem 1rem 1rem 0;
+	}
+	.alignright {
+		float: right;
+		margin: 0.25rem 0 1rem 1rem;
+	}
+	.aligncenter,
+	div.aligncenter {
+		display: block;
+		margin: 0.25rem auto 0.25rem auto;
+	}
+a img.alignnone {
+	margin: 0.25rem 1rem 1rem 0;
+}
+	a img.alignleft {
+		float: left;
+		margin: 0.25rem 1rem 1rem 0;
+	}
+	a img.alignright {
+		float: right;
+		margin: 0.25rem 0 1rem 1rem;
+	}
+	a img.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/** CAPTIONS */
+.wp-caption {
+	background-color: rgba(0, 0, 0, 0.02);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	max-width: 100%;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	text-align: center;
+}
+	.wp-caption.alignnone {
+		margin: 0.25rem 1rem 1rem 0;
+	}
+	.wp-caption.alignleft {
+		margin: 0.25rem 1rem 1rem 0;
+	}
+	.wp-caption.alignright {
+		margin: 0.25rem 0 1rem 1rem;
+	}
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	width: auto;
+}
+.wp-caption .wp-caption-text {
+	font-size: 1rem;
+	line-height: 1;
+	margin: 0;
+	padding: 1rem;
+}
+
+/**
+ * COMMENTS 
+ */
+.comment-list li.bypostauthor, .byuser {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #f2f2f2;
+}
+	.comment ol.children {
+		list-style-type: none;
+	}
+
+/** 
+ * GALLERIES 
+ */
+.gallery {}
+	.gallery-item {
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+	}
+		.gallery-icon img {
+			height: auto;
+			max-width: 100%;
+			padding: 0.05rem;
+		}
+			.gallery-caption {
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				cursor: pointer;
+			}
+				.gallery-caption:hover {
+					overflow: visible;
+					white-space: unset;
+				}
+.gallery-columns-1 .gallery-item {
+	width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+	width: 33.3333%;
+}
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+	.gallery-columns-5 .gallery-caption {
+		display: none;
+	}
+	.gallery-columns-5 .gallery-item {
+		margin-bottom: 0;
+	}
+.gallery-columns-6 .gallery-item {
+	width: 16.6667%;
+}
+	.gallery-columns-6 .gallery-caption {
+		display: none;
+	}
+	.gallery-columns-6 .gallery-item {
+		margin-bottom: 0;
+	}
+.gallery-columns-7 .gallery-item {
+	width: 14.2857%;
+}
+	.gallery-columns-7 .gallery-caption {
+		display: none;
+	}
+	.gallery-columns-7 .gallery-item {
+		margin-bottom: 0;
+	}
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+	.gallery-columns-8 .gallery-caption {
+		display: none;
+	}
+	.gallery-columns-8 .gallery-item {
+		margin-bottom: 0;
+	}
+.gallery-columns-9 .gallery-item {
+	width: 11.1111%;
+}
+	.gallery-columns-9 .gallery-caption {
+		display: none;
+	}
+	.gallery-columns-9 .gallery-item {
+		margin-bottom: 0;
+	}

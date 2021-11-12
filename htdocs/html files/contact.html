@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN|  RACHEAL DEVELOPERS</title>
+
+    <style text="css/text">
+   .div{
+        background-image: url(images/watermark.jpg);
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+    h1{
+        color: honeydew;
+    }
+    .name label{
+        color: green;
+    }
+    .name input{
+        border-radius: 10px;
+        padding: 2px;
+        margin: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: row;
+        margin-left: 60PX;
+
+    }
+    .number label {
+        color: green;
+    }
+    .number input{
+        border-radius: 10px;
+        padding: 2px;
+        margin: 5px;
+    }
+    .email label{
+        color: green;
+    }
+    .email input{
+    padding: 2px;
+    margin: 5px;
+    flex-direction: row;
+    border-radius: 10px;
+    }
+    .date-of-birth label{
+        color: green;
+    }
+    .date-of-birth input{
+        padding: 2px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .send{
+        text-align: center;
+        text-decoration: bold;
+        margin: 10px;
+        flex-direction: row;
+
+    }
+    .back{
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        text-decoration-style: bold;
+        flex-direction: row;
+    }
+    @media screen and (max-width: 480px){
+        h1{
+        color: honeydew;
+        margin-top: 100px;
+    }
+    form {
+    display: block;
+    margin-top: 20px;
+    width: 38rem;
+    height: 12rem;
+    }
+    .name label{
+        margin-top: 20px;
+        margin-right: 45px;
+    }
+        .name input{
+        border-radius: 10px;
+        padding: 2px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: row;
+        margin-left: 20PX;
+    } 
+    .number input{
+        border-radius: 10px;
+        padding: 2px;
+        margin: 5px;
+        margin-left: 10px;
+    }
+    .email input{
+    padding: 2px;
+    margin: 5px;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-left: 10px;
+    }
+    .date-of-birth input{
+        padding: 2px;
+        margin: 5px;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+}
+    </style>
+</head>
+<body class="div">
+<header>
+    <h1>SIGN UP</h1>
+    </header>
+<div>
+    <h1>SIGN UP</h1>
+    <form role="GET"> 
+        <div class="name">
+            <label for="input">Name</label>
+            <input type="text">
+        </div>
+        <div class="number"> 
+            <label for="input">phone number</label>
+            <input type="varchar">
+        </div>
+        <div class="email">
+            <label for="input">Email address</label>
+            <input type="varchar">
+        </div>
+        <div class="date-of-birth">
+            <label for="input">Date Of Birth</label>
+            <input type="date">
+        </div>
+        <button class="send">SEND</button>
+    </form>
+    <a href ="index.html"><button class="back2">BACK TO HOME</button></a>
+</div>
+</body>
+</html>
